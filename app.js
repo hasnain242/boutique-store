@@ -28,12 +28,9 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
-document.getElementById('female').addEventListener("change",e => {
-     if(e!=""){
-        alert("success")
-     }else{
-        alert('option is not selected')
-     }
+document.getElementById('inp').addEventListener('click',e=>{
+    var p=document.querySelector('p').value;
+    document.write(p)
 })
 function check () {
     var uname = (document.getElementById("uname")).value ; 
