@@ -8,7 +8,7 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
- var sel=document.querySelector('select').value;
+var sel = document.querySelector("select").value;
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -28,20 +28,17 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
-document.getElementById('inp').addEventListener('click',e=>{
-    var p=document.querySelector('p').value;
-    document.write(p)
-})
-function check () {
-    var uname = (document.getElementById("uname")).value ; 
-    if (uname==""){
-        alert("Username is obligatory")
-    }
-    var name = (document.getElementById("name")).value ; 
-    if (name==""){
-        alert("address is obligatory")
-    }
-};
+
+function check() {
+  var uname = document.getElementById("uname").value;
+  if (uname == "") {
+    alert("Username is obligatory");
+  }
+  var name = document.getElementById("name").value;
+  if (name == "") {
+    alert("address is obligatory");
+  }
+}
 
 //  function inp(){
 //  if(inp===0){
